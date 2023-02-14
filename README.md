@@ -1,5 +1,5 @@
 <h1 align="center"> PyPassword</h1>
-<h2 align="center"> Manteha suas senhas seguras e acesse onde estiver!</h3>
+<h2 align="center"> Mantenha suas senhas seguras e acesse onde estiver!</h3>
 
 
 

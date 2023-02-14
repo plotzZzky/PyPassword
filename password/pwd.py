@@ -8,7 +8,14 @@ import random
 path = Path('password/dbs/').absolute()
 
 
+def check_path():
+    x = Path.exists(path)
+    if not x:
+        Path.mkdir(path)
+
+
 def create_new_file(user_id, password):
+    check_path()
     file = f"{path}/{user_id}.kdbx"
     db = create_database(filename=file, password=password)
     return db

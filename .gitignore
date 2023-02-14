@@ -1,0 +1,12 @@
+# ignore archives
+*.log
+*.json
+*.kdbx
+*.kdbx.tmp
+*.sqlite3
+password/dbs/*
+
+#ignore folders
+./*
+.idea/*
+__pycache__/*

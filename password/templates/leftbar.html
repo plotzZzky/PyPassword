@@ -1,0 +1,14 @@
+<div class="div-align-btns">
+    <div class="item-list-pwd" onclick="getProps('new')">
+        <a> Nova senha </a>
+    </div>
+    {% for item in entries %}
+        <div class="item-list-pwd" onclick="getProps('{{ item.title }}')">
+            <a> <i class="fa-solid fa-key"></i> {{ item.title }} </a>
+        </div>
+    {% endfor %}
+
+    <button class="btn-download" onclick="location.href='download/'">
+       <i class="fa-solid fa-cloud-arrow-down"></i>
+    </button>
+</div>

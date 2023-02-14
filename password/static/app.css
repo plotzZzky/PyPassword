@@ -1,0 +1,107 @@
+.app-bar {
+    position: fixed;
+    top: 40px;
+    left: 0px;
+    width: min(240px, 30%);
+    height: 100%;
+    padding: 4px;
+    background-color: var(--color_pri);
+    display: flex;
+    flex-direction: column;
+}
+
+.div-align-btns {
+    width: 100%;
+    height: 90%;
+    padding: 4px;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-btn {
+    width: auto;
+    height: 32px;
+    margin: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    border: 2px solid var(--color_btn);
+    border-radius: 4px;
+    color: var(--color_btn);
+    background-color: var(--background);
+}
+
+.app-btn:hover {
+    background-color: var(--color_pri);
+    color: var(--fontColor_pri);
+}
+
+.btn-download {
+    width: auto;
+    height: 32px;
+    margin: auto 12px 0px 4px;
+    border: 2px solid var(--fontColor_pri);
+    border-radius: 4px;
+    color: var(--fontColor_pri);
+    background-color: var(--color_pri);
+}
+
+.btn-download:hover {
+    background-color: var(--color_sec);
+    color: var(--fontColor_sec);
+}
+
+.item-list-pwd {
+    color: var(--fontColor_pri);
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: left;
+    margin: 4px 0px 4px 0px;
+}
+
+.item-list-pwd a {
+    padding-left: 8px;
+}
+
+.item-list-pwd:hover {
+    background-color: var(--background);
+    border-radius: 8px 0px 0px 8px;
+    color: var(--fontColor_sec);
+}
+
+.item-list-pwd i {
+    padding-right: 8px;
+}
+
+/* Props */
+.props-pwd {
+    width: auto;
+    height: 80vh;
+    padding: 4px;
+    padding-top: 48px;
+    margin: auto;
+    margin-left: min(260px, 33%);
+}
+
+input[type=text] {
+    width: 80%;
+    height: 24px;
+    margin: auto;
+    margin-top: 1%;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color_sec);
+    padding-left: 4px;
+    padding: 4px;
+}
+
+.align-btn-form {
+    width: min(600px, 80%);
+    height: auto;
+    margin: auto;
+    margin-top: 1%;
+    display: inline-flex;
+    justify-content: space-between;
+}

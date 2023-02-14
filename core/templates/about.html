@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+    {% block title %} Sobre {% endblock %}
+
+    {% block page %}
+
+        <a class="title"> Sobre:</a><br>
+        <p class="about-link"> Projeto de site para gerenciar senhas feita com Django, Postgresql e pykeepass</p>
+        <p class="about-link"> Permite salvar senhas em um arquivo criptografado com senha e gerar senhas aleatorias</p>
+
+        <h2 class="about-link"> Estrutura: </h2>
+        <a class="about-link" href="/users/login/">/users/login/ - Pagina de login  e Cadastro </a><br>
+        <a class="about-link" href="/users/config/">/users/config/ - Pagina para editar a conta </a><br>
+        <a class="about-link" href="/pwd/">/pwd/ - Pagina do app </a><br>
+        <a class="about-link" href="/about/">/about/ - Pagina sobre o projeto </a><br>
+
+    {% endblock %}

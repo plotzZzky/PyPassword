@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %} {% endblock %} - PyPassword </title>
+    {% load static %}
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        <script src="{% static 'js/base.js' %}"></script>
+        <script src="https://kit.fontawesome.com/71fde90bd7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    {% block css %} {% endblock %}
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="brand" onclick="location.href='/'">
+            <i class="fa-solid fa-lock"></i>
+            <a class="brand-name"> PyPassword </a>
+        </div>
+
+        <div class="menu" id="menu" onclick="OpenMenu()">
+            <a class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <div class="menu-item" onclick="location.href='/pwd/'">
+                <a> App </a>
+            </div>
+
+            <div class="menu-item"onclick="location.href='/about/'" >
+                <a href="/about/"> Sobre </a>
+            </div>
+
+            <div class="dropdown">
+                <div class="dropdown-menu">
+                    <a class="dropdown-text"> Login <i class="fa fa-caret-down"></i></a>
+                </div>
+                <div class="dropdown-content">
+                    <a href="/users/login/"> Entrar </a>
+                    <a href="/users/logout/"> Sair </a>
+                    <a href="/users/config/"> Editar </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        {% block page %} {% endblock %}
+    </div>
+
+</body>
+</html>

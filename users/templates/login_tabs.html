@@ -1,0 +1,28 @@
+<div class="login-content">
+    <div class="tabs">
+        <button id="tab-active" style="float: left;" class="tablinks" onclick="showLogin(this)"> Entrar </button>
+        <button  class="tablinks" onclick="showSignUp(this)"> Cadastrar </button>
+    </div>
+
+    <div style="display: block;" class="login-tab" id="Login">
+        <form name="login-form" method="POST" action="/users/login/">
+            {% csrf_token %}
+            {{ login.username }}
+            {{ login.password }}
+            {{ login.pwd_db }}
+            <input class="submit-input" type="submit" value="Entrar">
+        </form>
+    </div>
+
+    <div class="login-tab" id="Signup">
+        <form  method="POST" action="/users/register/">
+            {% csrf_token %}
+            {{ signup.username }}
+            {{ signup.email }}
+            {{ signup.password1 }}
+            {{ signup.password2 }}
+            {{ signup.pwd_db }}
+            <input class="submit-input" type="submit" value="Cadastrar">
+        </form>
+    </div>
+</div>

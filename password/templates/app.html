@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+    {% block title %} App {% endblock %}
+
+    {% load static %}
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'app.css' %}">
+        <script type=text/javascript src="{% static 'js/app.js' %}"></script>
+    {% endblock %}
+
+    {% block page %}
+        <div class="app-bar" id="appBar">
+            {% include "leftbar.html" %}
+        </div>
+
+        <div class="prop-view" id="propView">
+
+        </div>
+
+    {% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+    {% block title %} Entrar {% endblock %}
+
+    {% load static %}
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'login.css' %}">
+        <script type=text/javascript src="{% static 'js/login.js' %}"></script>
+    {% endblock %}
+
+    {% block page %}
+
+    <div class="div-login">
+        <div class="brand-login">
+            <a class="title"> PyPassword </a><br>
+            <a class="login-brand-subtitle"> Mantenha suas senhas seguras e acesse onde você estiver </a>
+        </div>
+
+        {% include "login_tabs.html" %}
+    </div>
+
+    {% endblock %}

@@ -3,7 +3,7 @@
 
 
 
-### Api/site para salvar senhas em um arquivo keeppass, também é possível gerar senhas randômicas.
+### Site para salvar senhas em um arquivo keeppass, também é possível gerar senhas randômicas.
 ### feito com Django, PostgresSql e Pykeepass.
 
 ![pwd](https://user-images.githubusercontent.com/12895974/218763813-c2494a71-57cb-485d-863d-dd48d552228e.png)
